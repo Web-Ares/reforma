@@ -1,0 +1,46 @@
+.our-projects {
+  padding: 10px 10px 1px;
+  background-color: $our-projects-back;
+  
+  &__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    color: $our-projects-color;
+    line-height: 18px;
+    text-decoration: underline;
+
+    img{
+      margin-right: 10px;
+    }
+
+  }
+  
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .our-projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-bottom: 10px;
+
+    &__item{
+      width: 235px;
+      margin-bottom: 0;
+    }
+
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .our-projects {
+    height: 50px;
+    padding: 0 10px;
+  }
+
+}

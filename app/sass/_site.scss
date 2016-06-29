@@ -1,0 +1,113 @@
+.site {
+  position: relative;
+  min-height: 100%;
+  min-width: 320px;
+  @include main-font1;
+  font-size: 100px;
+  overflow: hidden;
+  z-index: 1;
+
+  &__header {
+    position: relative;
+    font-size: .14em;
+    background-color: $site-header-back;
+    z-index: 3;
+
+    &-layout{
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+  }
+
+  &__centered{
+    position: relative;
+    width: 300px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__footer {
+    z-index: 2;
+    border-top: 12px solid $site-footer-border;
+    background-color: $site-footer-back;
+    color: $site-footer-color;
+    font-size: 0.14em;
+    overflow: hidden;
+
+    &-layout {
+      position: relative;
+      width: 320px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 18px 13px 0;
+    }
+
+    &_2{
+      background-color: #251095;
+    }
+
+    &_3{
+      background-color: #3b2314;
+      color: #fff;
+
+      a{
+        color: #fff;
+      }
+
+    }
+
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .site {
+
+    &__centered{
+      width: 748px;
+    }
+
+    &__footer-layout {
+      width: 768px;
+    }
+
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .site {
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+      width: 100%;
+      height: 205px;
+    }
+
+    &__centered{
+      width: 1000px;
+    }
+
+    &__footer {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      &-layout {
+        width: 1000px;
+        height: 193px;
+      }
+
+    }
+
+  }
+
+}
+

@@ -1,0 +1,14 @@
+@import "text-wrap";
+
+.about {
+  padding: 10px 0;
+
+  &__wrap{
+    padding: 0 10px;
+  }
+
+  &_2 h2{
+    color: $text-wrap-title-2;
+  }
+
+}

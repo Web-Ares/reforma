@@ -1,0 +1,81 @@
+.delivery {
+  padding: 9px 10px 10px;
+  background-color: $delivery-back;
+  font-size: 0.14em;
+
+  &__title{
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 22px;
+
+    span{
+      display: block;
+      text-transform: uppercase;
+      font-size: 1.19em;
+      letter-spacing: 0.4px;
+    }
+
+  }
+
+  &__form{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    input{
+      width: 228px;
+      height: 35px;
+      margin-top: 15px;
+      padding: 0 10px;
+      margin-bottom: 15px;
+      border: none;
+    }
+
+  }
+
+  &_2{
+    background-color: $delivery-back-2;
+    color: $delivery-color-2;
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .delivery {
+    padding: 14px 0;
+    font-size: 0.18em;
+
+    &__title{
+      margin-bottom: 20px;
+    }
+
+    &__form{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      font-size: .77em;
+
+      &_limited{
+        justify-content: flex-start;
+        width: 467px;
+
+        input{
+          margin-left: 0;
+        }
+
+      }
+
+      input{
+        margin: 0 13px 0 10px;
+        width: 299px;
+      }
+
+    }
+
+  }
+
+}

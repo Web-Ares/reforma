@@ -1,0 +1,53 @@
+.callback {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  padding: 5px 10px;
+
+  &__phone{
+    display: block;
+    margin: 3px 9px 3px 0;
+    border-bottom: 1px solid $callback-phone-border;
+    color: $callback-phone;
+    font-weight: 300;
+    cursor: default;
+
+    strong {
+      font-weight: 500;
+    }
+
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .callback {
+    position: absolute;
+    top: 14px;
+    right: 53px;
+    width: auto;
+    padding: 0;
+
+    &__phone{
+      font-size: 1.64em;
+
+      &_2{
+        font-size: 1.28em;
+      }
+
+    }
+
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .callback {
+    right: 0;
+  }
+
+}

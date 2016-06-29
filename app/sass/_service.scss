@@ -1,0 +1,150 @@
+.service {
+  padding: 12px 0;
+
+  &__wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    -webkit-align-items: stretch;
+    padding: 0 10px;
+  }
+
+  &__item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    min-height: 118px;
+    margin-bottom: 15px;
+    padding: 5px 0 10px;
+    border: 1px solid $service-border;
+    font-size: .18em;
+    line-height: 22px;
+    color: $service-color;
+    text-align: left;
+    @include oneEvent(box-shadow);
+
+    &:hover{
+      box-shadow: 2px 2px 2px rgba(155,155,155,.3);
+    }
+
+    p {
+      margin-bottom: 8px;
+      font-size: .78em;
+      line-height: 16px;
+    }
+
+  }
+
+  &__icon{
+    margin-right: 23px;
+  }
+
+  &__content{
+    width: 170px;
+  }
+
+  &__links{
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 16px;
+
+    a{
+      position: relative;
+      text-decoration: underline;
+      margin-right: 9px;
+      color: #003758;
+
+      &:after{
+        position: absolute;
+        right: -10px;
+        content: '|';
+      }
+
+      &:last-child{
+        padding-right: 0;
+
+        &:after{
+          display: none;
+        }
+
+      }
+
+      &:hover{
+        text-decoration: none;
+      }
+
+    }
+
+  }
+
+  &_3 .service__item{
+    color: #411095;
+
+    &__links a{
+      color: #411095;
+    }
+
+  }
+
+  &__btn{
+    display: block;
+    width: 90%;
+    height: 37px;
+    padding-top: 6px;
+    border-radius: 5px;
+    background-color: #95c11f;
+    color: #fff;
+    font-size: .8em;
+    font-weight: 600;
+    text-align: center;
+    @include  oneEvent(opacity);
+
+    &:hover{
+      opacity: .8;
+    }
+
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .service{
+
+    &__item {
+      height: 133px;
+      padding: 0;
+
+      &_wide{
+
+        .service__icon{
+          margin-right: 10px;
+        }
+
+        .service__content{
+          width: 230px;
+        }
+
+      }
+
+    }
+
+    &__icon{
+      min-height: 52px;
+    }
+
+    &__content {
+      width: 190px;
+    }
+
+    &__btn{
+      margin-top: -23px;
+      font-size: 1em;
+    }
+
+  }
+
+}

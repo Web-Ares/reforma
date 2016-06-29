@@ -1,0 +1,71 @@
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-bottom: 1px solid $btn-1-border;
+  height: 35px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background: $btn-back;
+  color: $btn-color;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+  @include oneEvent(opacity);
+
+  &:hover {
+    opacity: .8;
+  }
+
+  &_1{
+    border-bottom-color: $btn-1-border;
+  }
+
+  &_2 {
+    padding: 0 38px;
+    background: $btn-2-back;
+    border-bottom-color: $btn-2-border;
+  }
+
+  &_3 {
+    padding: 0 38px;
+    background: $btn-3-back;
+    border-bottom-color: $btn-3-border;
+  }
+
+  &_4 {
+    margin: 0;
+    padding: 0 36px;
+    background: $btn-4-back;
+    border-bottom-color: $btn-4-border;
+  }
+
+  &_5{
+    padding: 0 38px;
+    background: $btn-4-back;
+    border-bottom-color: $btn-4-border;
+  }
+
+  &_6{
+    padding: 0 38px;
+    background: $btn-6-back;
+    border-bottom-color: $btn-6-border;
+  }
+
+  &_7{
+    padding: 0 38px;
+    background: $btn-7-back;
+    border-bottom-color: $btn-7-border;
+    color: $btn-7-color;
+  }
+
+  &_8{
+    padding: 0 38px;
+    background: $btn-7-back;
+    border-bottom-color: $btn-7-border;
+    color: $btn-7-color;
+  }
+
+}

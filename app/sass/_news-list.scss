@@ -1,0 +1,168 @@
+.news-list {
+  position: relative;
+  padding-bottom: 10px;
+  background: url('../img/bg-news.png') no-repeat 0 50% $news-list-back;
+
+  &__control{
+    margin-bottom: 15px;
+    color: $news-list-title;
+    font-size: 0.18em;
+  }
+
+  &__title{
+    position: relative;
+    height: 46px;
+    padding-top: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    span{
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      top: -14px;
+      height: inherit;
+      margin-right: 12px;
+      padding: 14px 7px 0 18px;
+      background-color: $news-list-title-decor;
+      color: $news-list-title-color;
+
+      &:before{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+      }
+
+      &:after {
+        left: 100%;
+        top: 0;
+        border: solid transparent;
+        content: " ";
+        height: 36px;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(93, 166, 21, 0);
+        border-left-color: $news-list-title-decor;
+        border-width: 0 0 9px 9px;
+      }
+
+    }
+
+  }
+
+  &__archive{
+    color: $news-list-title;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+
+  &__item{
+    width: 300px;
+    margin: 0 auto 20px;
+  }
+
+  &__img{
+    margin-bottom: 9px;
+
+    img{
+      display: block;
+      max-width: 100%;
+    }
+
+  }
+
+  &__topic{
+    margin-bottom: 3px;
+
+    a{
+      color: $news-list-topic;
+      text-decoration: underline;
+    }
+
+  }
+
+  &__content{
+    padding: 0 10px 0 9px;
+    color: $news-list-content;
+    font-size: .14em;
+    line-height: 21px;
+  }
+
+  &_2{
+
+    .news-list__control,
+    .news-list__archive,
+    .news-list__topic a{
+      color: #411095;
+    }
+
+  }
+
+  &_3{
+
+    .news-list__control,
+    .news-list__archive,
+    .news-list__topic a{
+      color: #3b2314;
+    }
+
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .news-list {
+    margin-top: 51px;
+    padding: 15px 0 10px;
+
+    &__control{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      top: -51px;
+      left: 0;
+      right: 0;
+      margin-bottom: 0;
+    }
+
+    &__wrap{
+      display: flex;
+      flex-flow: wrap row;
+      justify-content: space-between;
+      align-items: stretch;
+      width: 700px;
+      margin: 0 auto;
+    }
+
+    &__item{
+      margin: 0 0 20px;
+      width: 330px;
+    }
+
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .news-list {
+
+    &__wrap{
+      width: 1000px;
+    }
+
+    &__item{
+      margin-bottom: 0;
+    }
+
+
+  }
+
+}

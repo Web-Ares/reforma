@@ -1,0 +1,24 @@
+.text-wrap {
+  font-size: 0.14em;
+  line-height: 22px;
+  text-align: left;
+
+  p{
+    margin-bottom: 8px;
+  }
+
+  h2{
+    margin-bottom: 13px;
+    color: $text-wrap-title;
+    font-size: 1.57em;
+  }
+
+  dl{
+    margin-bottom: 8px;
+  }
+
+  dt{
+    font-weight: 700;
+  }
+
+}

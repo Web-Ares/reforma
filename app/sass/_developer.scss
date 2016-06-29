@@ -1,0 +1,27 @@
+.developer {
+  width: 128px;
+  margin-bottom: 15px;
+  line-height: 21px;
+
+  a {
+    color: $site-footer-color;
+    text-decoration: underline;
+
+    &:hover{
+      text-decoration: none;
+    }
+
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .developer {
+    position: absolute;
+    top: 133px;
+    right: 0;
+    margin-bottom: 0;
+  }
+
+}

@@ -1,0 +1,42 @@
+//fonts
+@mixin main-font1() {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin justify() {
+  text-align: justify;
+
+  &:after {
+    display: inline-block;
+    width: 100%;
+    content: '';
+  }
+}
+
+@mixin oneEvent($event) {
+  transition: $event .3s ease;
+  -webkit-transition: $event .3s ease;
+}
+@mixin duoEvent($first-event, $second-event) {
+  transition: $first-event .3s ease, $second-event .3s ease;
+  -webkit-transition: $first-event .3s ease, $second-event .3s ease;
+}
+
+@mixin absoluteCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+}
+@mixin absoluteCenterX() {
+  position: absolute;
+  left: 50%;
+  transform: translateX( -50% );
+}
+@mixin absoluteCenterY() {
+  position: absolute;
+  top: 50%;
+  transform: translateY( -50% );
+}
