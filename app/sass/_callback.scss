@@ -12,7 +12,13 @@
     border-bottom: 1px solid $callback-phone-border;
     color: $callback-phone;
     font-weight: 300;
-    cursor: default;
+    transition: border-bottom-color .3s ease, opacity .3s ease;
+    -webkit-transition: border-bottom-color .3s ease, opacity .3s ease;
+
+    &:hover{
+      border-bottom-color: transparent;
+      opacity: .7;
+    }
 
     strong {
       font-weight: 500;

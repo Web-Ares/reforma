@@ -46,6 +46,7 @@
       font-weight: 600;
       text-align: center;
       text-transform: uppercase;
+      cursor: default;
     }
 
     &_gallery{
@@ -110,7 +111,6 @@
     color: $forms-color-phone;
     font-size: .9em;
     font-weight: 400;
-    cursor: default;
 
     span{
       display: inline-block;
