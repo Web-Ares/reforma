@@ -71,7 +71,7 @@
 
     img{
       display: block;
-      max-width: 100%;
+      width: 100%;
     }
 
   }
@@ -142,8 +142,12 @@
     }
 
     &__item{
-      margin: 0 0 20px;
+      margin: 0 6px 20px 0;
       width: 330px;
+    }
+
+    &__img{
+      width: 100%;
     }
 
   }
@@ -155,11 +159,14 @@
   .news-list {
 
     &__wrap{
-      width: 1000px;
+      width: auto;
+      justify-content: flex-start;
+      margin-right: -2%;
     }
 
     &__item{
-      margin-bottom: 0;
+      width: 32%;
+      margin-right: 1%;
     }
 
 

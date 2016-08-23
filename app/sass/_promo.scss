@@ -198,3 +198,39 @@
   }
 
 }
+
+@media (min-width: $hd) {
+
+  .promo {
+
+    &__link{
+      width: 420px;
+
+      &_005{
+        width: 860px;
+      }
+
+    }
+
+    &__wrap {
+      width: 1300px;
+    }
+
+    &__swiper {
+      width: 970px;
+    }
+
+    &__item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+      }
+
+    }
+
+  }
+
+}

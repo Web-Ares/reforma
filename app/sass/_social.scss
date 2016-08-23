@@ -25,6 +25,39 @@
 
   }
 
+  &_header{
+   display: none;
+
+    .social__item{
+
+      &_fb{
+        background-position: 0 -21px;
+      }
+
+      &_vk{
+        background-position: -30px -21px;
+      }
+
+      &_ig{
+        background-position: -60px -21px;
+      }
+
+    }
+
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .social_header {
+    display: block;
+    position: absolute;
+    top: 23px;
+    right: 349px;
+    width: auto;
+  }
+
 }
 
 @media (min-width: $desktop) {
@@ -41,6 +74,11 @@
         opacity: .8;
       }
 
+    }
+
+    &_header {
+      top: 23px;
+      right: 298px;
     }
 
   }

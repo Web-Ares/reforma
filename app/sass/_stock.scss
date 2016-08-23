@@ -104,6 +104,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     min-width: 112px;
     overflow: hidden;
 
@@ -184,6 +185,27 @@
     }
 
   }
+
+  }
+
+}
+
+@media (min-width: $hd) {
+
+  .stock {
+
+    &__wrap {
+      width: 1300px;
+    }
+
+    &__item {
+      width: 420px;
+
+      &_col-2{
+        width: 850px;
+      }
+
+    }
 
   }
 

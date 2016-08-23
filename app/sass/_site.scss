@@ -15,7 +15,7 @@
 
     &-layout{
       position: relative;
-      max-width: 1000px;
+      max-width: 1300px;
       margin: 0 auto;
     }
 
@@ -24,7 +24,7 @@
   &__centered{
     position: relative;
     width: 300px;
-    max-width: 1000px;
+    max-width: 1300px;
     margin: 0 auto;
   }
 
@@ -39,7 +39,6 @@
     &-layout {
       position: relative;
       width: 320px;
-      max-width: 1000px;
       margin: 0 auto;
       padding: 18px 13px 0;
     }
@@ -111,3 +110,19 @@
 
 }
 
+@media (min-width: $hd) {
+
+  .site {
+
+    &__centered{
+      width: 1300px;
+    }
+
+    &__footer-layout {
+        width: 1300px;
+        height: 193px;
+    }
+
+  }
+
+}
