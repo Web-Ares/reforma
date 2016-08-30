@@ -28,6 +28,11 @@
     margin: 0 auto;
   }
 
+  &__title{
+    font-size: 0.27em;
+    font-weight: 400;
+  }
+
   &__footer {
     z-index: 2;
     border-top: 12px solid $site-footer-border;
