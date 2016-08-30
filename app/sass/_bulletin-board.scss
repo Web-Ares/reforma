@@ -11,34 +11,35 @@
   font-size: 14px;
 }
 .bulletin-board{
-  margin-bottom: 30px;
+  margin-bottom: 19px;
 }
 .bulletin-board__item{
-  padding: 5px 20px;
+  padding: 3px 18px 14px;
   margin-bottom: 21px;
-  background: $bulletin-item-back;
-  border: 1px solid $bulletin-item-border-bottom;
-  border-top: 3px solid $bulletin-item-border;
-  color: $bulletin-item-color;
+  background: #fbf9f6;
+  border: 1px solid #eae0d2;
+  border-top: 3px solid #ffd08f;
+  color: #000;
   font-size: .14em;
-  line-height: 20px;
+  line-height: 24px;
 }
 .bulletin-board__name{
   color: $bulletin-name-color;
 }
 .bulletin-board__title{
-  margin-bottom: 10px;
+  margin-bottom: 28px;
   font-size: .20em;
+  text-align: center;
 }
 .bulletin-board__form{
   width: 100%;
-  padding: 18px 18px;
+  padding: 20px 17px;
   background: $bulletin-item-back;
   border: 1px solid $bulletin-item-border-bottom;
   color: $bulletin-name-color;
 }
 .bulletin-board__form fieldset{
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   font-size: .14em;
 }
 .bulletin-board__form input{
@@ -48,25 +49,25 @@
   height: 34px;
   width: 100%;
   border: 1px solid $bulletin-item-border-bottom;
-  font-size: 14px;
 }
 .bulletin-board__form .bulletin-board__sum input{
-  width: calc(100% - 110px);
-  margin: 0 2%;
+  width: 170px;
+  margin: 0 3%;
 }
 .bulletin-board__form label{
   display: block;
   width: 100%;
-  margin-bottom: 5px;
+  margin-bottom: 9px;
   font-size: 14px;
 }
 .bulletin-board__form select{
   display: inline-block;
   vertical-align: middle;
   height: 34px;
-  width: calc(100% - 48px);
-  border: 1px solid $bulletin-item-border-bottom;
-  color: #b9b9b9;
+  width: 207px;
+  margin-left: 9px;
+  border: 1px solid #eae0d2;
+  color: #232323;
   font-size: 14px;
 }
 .bulletin-board__form textarea{
@@ -78,11 +79,29 @@
   font-size: 14px;
 }
 .bulletin-board__enter input{
-  width: calc(100% - 164px);
+  width: calc(100% - 168px);
 }
-.bulletin-board__enter img{
+.bulletin-board__enter-pic{
   display: inline-block;
   vertical-align: middle;
+  width: 160px;
+  height: 34px;
+}
+.bulletin-board__enter-pic img{
+  width: 100%;
+  height: 100%;
+}
+.bulletin-board__sum{
+  margin-bottom: 19px;
+}
+.bulletin-board__details{
+  margin-bottom: 9px;
+}
+.bulletin-board__enter{
+  margin-bottom: 16px;
+}
+.bulletin-board__form .btn {
+  padding: 0 38px;
 }
 
 @media (min-width: $tablet-portrait) {
@@ -97,10 +116,10 @@
     align-items: flex-start;
   }
   .bulletin-board__wrap{
-    width: calc(100% - 334px);
+    width: calc(100% - 336px);
   }
   .bulletin-board__form{
-    width: 310px;
+    width: 312px;
   }
 }
 

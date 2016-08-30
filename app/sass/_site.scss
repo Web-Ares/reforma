@@ -25,17 +25,20 @@
     position: relative;
     width: 300px;
     max-width: 1300px;
-    margin: 0 auto;
+    margin: 10px auto 0;
   }
 
   &__title{
+    padding-left: 4px;
     font-size: 0.27em;
     font-weight: 400;
   }
 
   &__title-description{
+    margin: 10px 0 19px;
+    padding-left: 5px;
     font-size: .14em;
-    line-height: 16px;
+    line-height: 24px;
     color: #604136;
   }
 
@@ -78,6 +81,7 @@
 
     &__centered{
       width: 748px;
+      margin-top: 45px;
     }
 
     &__footer-layout {
@@ -102,6 +106,7 @@
 
     &__centered{
       width: 1000px;
+      padding: 0 10px;
     }
 
     &__footer {
