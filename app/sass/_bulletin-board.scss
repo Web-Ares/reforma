@@ -1,0 +1,109 @@
+.bulletin-board__form ::-webkit-input-placeholder {
+  color: #b9b9b9;
+  font-size: 14px;
+}
+.bulletin-board__form :-moz-placeholder {
+  color: #b9b9b9;
+  font-size: 14px;
+}
+.bulletin-board__form .placeholder {
+  color: #b9b9b9;
+  font-size: 14px;
+}
+.bulletin-board{
+  margin-bottom: 30px;
+}
+.bulletin-board__item{
+  padding: 5px 20px;
+  margin-bottom: 21px;
+  background: $bulletin-item-back;
+  border: 1px solid $bulletin-item-border-bottom;
+  border-top: 3px solid $bulletin-item-border;
+  color: $bulletin-item-color;
+  font-size: .14em;
+  line-height: 20px;
+}
+.bulletin-board__name{
+  color: $bulletin-name-color;
+}
+.bulletin-board__title{
+  margin-bottom: 10px;
+  font-size: .20em;
+}
+.bulletin-board__form{
+  width: 100%;
+  padding: 18px 18px;
+  background: $bulletin-item-back;
+  border: 1px solid $bulletin-item-border-bottom;
+  color: $bulletin-name-color;
+}
+.bulletin-board__form fieldset{
+  margin-bottom: 10px;
+  font-size: .14em;
+}
+.bulletin-board__form input{
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 34px;
+  width: 100%;
+  border: 1px solid $bulletin-item-border-bottom;
+  font-size: 14px;
+}
+.bulletin-board__form .bulletin-board__sum input{
+  width: calc(100% - 110px);
+  margin: 0 2%;
+}
+.bulletin-board__form label{
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.bulletin-board__form select{
+  display: inline-block;
+  vertical-align: middle;
+  height: 34px;
+  width: calc(100% - 48px);
+  border: 1px solid $bulletin-item-border-bottom;
+  color: #b9b9b9;
+  font-size: 14px;
+}
+.bulletin-board__form textarea{
+  height:97px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid $bulletin-item-border-bottom;
+  font-size: 14px;
+}
+.bulletin-board__enter input{
+  width: calc(100% - 164px);
+}
+.bulletin-board__enter img{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (min-width: $tablet-portrait) {
+
+}
+@media (min-width: $desktop) {
+
+  .bulletin-board{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .bulletin-board__wrap{
+    width: calc(100% - 334px);
+  }
+  .bulletin-board__form{
+    width: 310px;
+  }
+}
+
+@media (min-width: $hd) {
+
+}

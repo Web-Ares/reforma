@@ -33,6 +33,12 @@
     font-weight: 400;
   }
 
+  &__title-description{
+    font-size: .14em;
+    line-height: 16px;
+    color: #604136;
+  }
+
   &__footer {
     z-index: 2;
     border-top: 12px solid $site-footer-border;
