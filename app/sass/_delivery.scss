@@ -1,7 +1,13 @@
 .delivery {
-  padding: 9px 10px 10px;
-  background-color: $delivery-back;
-  font-size: 0.14em;
+  margin-bottom: 15px;
+  padding: 10px 0 12px;
+  background-color: $stock-back;
+
+  &__wrap{
+    padding: 9px 10px 10px;
+    background-color: $delivery-back;
+    font-size: 0.14em;
+  }
 
   &__title{
     margin-bottom: 5px;
@@ -34,7 +40,7 @@
 
   }
 
-  &_2{
+  &_2 .delivery__wrap{
     background-color: $delivery-back-2;
     color: $delivery-color-2;
   }
@@ -44,8 +50,11 @@
 @media (min-width: $tablet-portrait) {
 
   .delivery {
-    padding: 14px 0;
-    font-size: 0.18em;
+
+    &__wrap{
+      padding: 14px 0;
+      font-size: 0.18em;
+    }
 
     &__title{
       margin-bottom: 20px;
