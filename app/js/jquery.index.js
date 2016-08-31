@@ -8,6 +8,10 @@
             new Sliders ( $( this ) );
         } );
 
+        $.each( $( '.swiper-container' ), function() {
+            Slider ( $( this ) );
+        } );
+
         $.each( $( '.menu-btn' ), function() {
             new Menu ( $( this ) );
         } );
@@ -164,6 +168,40 @@
 
         _init();
 
+    };
+
+    var Slider = function (obj) {
+
+        //private properties
+        var _self = this,
+            _obj = obj;
+
+        //private methods
+        var _addEvents = function () {
+
+            },
+            _init = function () {
+                _addEvents();
+            };
+
+        if (_obj.hasClass('camp-slider__wrap')) {
+            var _slider = new Swiper(_obj, {
+                nextButton: '.camp-slider__next',
+                prevButton: '.camp-slider__prev',
+                paginationClickable: true,
+                slidesPerView: 1,
+                autoplay: 10000,
+                speed: 2000,
+                loop: true
+            });
+
+        }
+
+        //public properties
+
+        //public methods
+
+        _init();
     };
 
 } )();
