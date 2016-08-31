@@ -78,6 +78,18 @@
 
     &_header {
       top: 23px;
+      right: 308px;
+    }
+
+  }
+
+}
+
+@media (min-width: $hd) {
+
+  .social {
+
+    &_header {
       right: 298px;
     }
 

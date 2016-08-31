@@ -30,9 +30,13 @@
 
   &__title{
     margin-bottom: 25px;
-    padding-left: 6px;
     font-size: 0.27em;
     font-weight: 400;
+
+    &_1{
+      color: #00568a;
+    }
+
   }
 
   &__title-description{
@@ -41,6 +45,18 @@
     font-size: .14em;
     line-height: 24px;
     color: #604136;
+  }
+
+  &__content{
+    padding-top: 15px;
+  }
+
+  &__aside{
+    width: 100%;
+  }
+
+  &__wrap{
+    width: 100%;
   }
 
   &__footer {
@@ -84,6 +100,10 @@
       width: 748px;
     }
 
+    &__content{
+      padding-top: 28px;
+    }
+
     &__footer-layout {
       width: 768px;
     }
@@ -106,6 +126,23 @@
 
     &__centered{
       width: 1000px;
+    }
+
+    &__content{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &__wrap {
+      width: 751px;
+      padding-right: 10px;
+      order: 2;
+    }
+
+    &__aside{
+      width: 220px;
+      order: 1;
     }
 
     &__footer {
@@ -131,6 +168,10 @@
 
     &__centered{
       width: 1300px;
+    }
+
+    .site__wrap {
+      width: 1040px;
     }
 
     &__footer-layout {

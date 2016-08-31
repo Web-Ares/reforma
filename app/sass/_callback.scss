@@ -53,6 +53,14 @@
 @media (min-width: $desktop) {
 
   .callback {
+    right: 10px;
+  }
+
+}
+
+@media (min-width: $hd) {
+
+  .callback {
     right: 0;
   }
 
