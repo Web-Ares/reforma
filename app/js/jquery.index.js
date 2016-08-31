@@ -12,7 +12,59 @@
             new Menu ( $( this ) );
         } );
 
+        $.each( $( '#map' ), function() {
+            new Map ( $( this ) );
+        } );
+
     } );
+
+    var Map = function (obj) {
+
+        //private properties
+        var _obj = obj,
+            _mapData = _obj.data('map'),
+            _myMap, _myPlacemark;
+
+        //private methods
+        var _onEvent = function(){
+
+                _initMap();
+                _initPlaces();
+
+            },
+            _initMap = function(){
+
+                _myMap = new ymaps.Map('map', {
+                    center: _mapData.center,
+                    zoom: _mapData.zoom,
+                    controls: ['smallMapDefaultSet']
+                }, {
+                    searchControlProvider: 'yandex#search'
+                });
+
+            },
+            _initPlaces = function(){
+
+                _myPlacemark = new ymaps.Placemark( _mapData.place, {
+                    iconCaption: _mapData.balloon
+                }, {
+                    preset: 'islands#blueCircleDotIconWithCaption'
+                });
+
+                _myMap.geoObjects.add(_myPlacemark);
+
+            },
+            _init = function() {
+                ymaps.ready(_onEvent);
+            };
+
+        //public properties
+
+        //public methods
+
+
+        _init();
+    };
 
     var Menu = function( obj ) {
 

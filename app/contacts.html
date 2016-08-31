@@ -131,7 +131,8 @@
         </header>
         <!-- /site__header -->
 
-        <div class="site__content site__centered">
+        <!-- contact -->
+        <div class="contact site__centered">
 
             <h2 class="site__title">Контакты</h2>
 
@@ -140,54 +141,92 @@
 
                 <div class="contact__info-item">
                     <p>Справочная:</p>
-                    <p><a href="tel:+73472775533">+7 (347) 277-55-33</a></p>
+                    <p><strong><a href="tel:+73472775533">+7 (347) 277-55-33</a></strong></p>
                 </div>
 
-                <div class="contact__info-item">
+                <div class="contact__info-item contact__info-item_address">
                     <p>Адрес:</p>
-                    <p>г. Уфа, ул. Р. Зорге, 11/1</p>
+                    <p><strong>г. Уфа, ул. Р. Зорге, 11/1</strong></p>
                 </div>
 
-                <div class="contact__info-item">
+                <div class="contact__info-item contact__info-item_email">
                     <p>E-mail:</p>
-                    <p><a href="mailto:info@reforma-ufa.ru">info@reforma-ufa.ru</a></p>
+                    <p><strong><a href="mailto:info@reforma-ufa.ru">info@reforma-ufa.ru</a></strong></p>
                 </div>
 
             </address>
             <!-- /contact__info -->
 
+            <!-- contact__wrap -->
             <div class="contact__wrap">
 
+                <div class="contact__wrap-item">
+                    <p><strong>Фитнес-клуб «Re`форма»</strong></p>
+                    <p>Рецепция: <a href="tel:2775533">277-55-33</a></p>
+                </div>
+
+                <div class="contact__wrap-item contact__wrap-item_1">
+                    <p><strong>Фитнес-клуб «Джамп»</strong></p>
+                    <p>5 этаж, правое крыло</p>
+                    <p>Рецепция: <a href="tel:2775533">277-55-33</a></p>
+                </div>
+
+                <div class="contact__wrap-item contact__wrap-item_2">
+                    <p><strong>Салон красоты «Парадиз»</strong></p>
+                    <p>5 этаж, левое крыло</p>
+                    <p>Тел. <a href="tel:2777575">277-75-75</a></p>
+                </div>
+
+                <div class="contact__wrap-item contact__wrap-item_3 contact__wrap-item-bigger">
+                    <p><strong>Кафе «Вита Лита»</strong></p>
+                    <p>3 этаж</p>
+                    <p>Тел. <a href="tel:2933936">293-39-36</a></p>
+                </div>
+
+                <div class="contact__wrap-item contact__wrap-item_4 contact__wrap-item-bigger">
+                    <p><strong>SPA-салон «Парадиз»</strong></p>
+                    <p>5 этаж, левое крыло</p>
+                    <p>Тел. <a href="tel:2777575">277-75-75</a></p>
+                </div>
+
             </div>
-            Фитнес-клуб «Re`форма»
-            Рецепция: 277-55-33
+            <!-- /contact__wrap -->
 
-            Фитнес-клуб «Джамп»
-            5 этаж, правое крыло
-            Рецепция: 277-55-33
+            <!-- map -->
+            <div id="map" data-map='{
+                "center":[54.751233, 55.997738],
+                "zoom": 14,
+                "place": [54.751102, 55.982631],
+                "balloon": "Парадиз"
+            }'></div>
+            <!-- /map -->
 
-            Салон красоты «Парадиз»
-            5 этаж, левое крыло
-            Тел. 277-75-75
+            <!-- contact__form -->
+            <form method="get" action="#" class="contact__form">
+                <h3 class="contact__form-topic">Обратная связь</h3>
 
-            Кафе «Вита Лита»
-            3 этаж
-            Тел. 293-39-36
+                <div class="contact__fieldset">
+                    <label for="contact__form-name">Ваше имя</label>
+                    <input type="text" name="contact__form-name" id="contact__form-name" />
+                </div>
 
-            SPA-салон «Парадиз»
-            5 этаж, левое крыло
-            Тел. 277-75-75
+                <div class="contact__fieldset">
+                    <label for="contact__form-email">E-mail</label>
+                    <input type="text" name="contact__form-email" id="contact__form-email" />
+                </div>
 
-            Обратная связь
+                <div class="contact__fieldset contact__fieldset_1">
+                    <label for="contact__form-message">Текст сообщения</label>
+                    <textarea name="contact__form-message" id="contact__form-message"></textarea>
+                </div>
 
-            Ваше имя
+                <button type="button" class="contact__form-btn btn">Отправить</button>
 
-            E-mail
+            </form>
+            <!-- /contact__form -->
 
-            Текст сообщения
-
-            Отправить
         </div>
+        <!-- /contact -->
 
         <!-- site__footer -->
         <footer class="site__footer">
@@ -267,6 +306,7 @@
     <script src="js/vendors/jquery-2.2.1.min.js"></script>
     <script src="js/vendors/swiper.jquery.min.js"></script>
     <script src="js/vendors/jquery.nicescroll.min.js"></script>
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/index.min.js"></script>
 </body>
 </html>
