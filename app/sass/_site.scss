@@ -25,7 +25,7 @@
     position: relative;
     width: 300px;
     max-width: 1300px;
-    margin: 10px auto 0;
+    margin: 0 auto;
   }
 
   &__title{
@@ -81,7 +81,6 @@
 
     &__centered{
       width: 748px;
-      margin-top: 45px;
     }
 
     &__footer-layout {
@@ -106,7 +105,6 @@
 
     &__centered{
       width: 1000px;
-      padding: 0 10px;
     }
 
     &__footer {

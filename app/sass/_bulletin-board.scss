@@ -10,6 +10,9 @@
   color: #b9b9b9;
   font-size: 14px;
 }
+.board{
+  margin-top: 10px;
+}
 .bulletin-board{
   margin-bottom: 19px;
 }
@@ -105,10 +108,14 @@
 }
 
 @media (min-width: $tablet-portrait) {
-
+  .board{
+    margin-top: 45px;
+  }
 }
 @media (min-width: $desktop) {
-
+  .board{
+    padding: 0 10px;
+  }
   .bulletin-board{
     display: flex;
     flex-direction: row;
