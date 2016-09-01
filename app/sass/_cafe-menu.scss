@@ -1,0 +1,49 @@
+.banquet__description{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 56%;
+  height: 286px;
+  background: no-repeat center;
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+}
+.banquet__description div {
+  position: absolute;
+  left: 0;
+  bottom: 16px;
+  width: 100%;
+  padding: 10px;
+  background: rgba(59, 35, 20, 0.4);
+}
+.banquet__description div span{
+  display: block;
+}
+.forms__item_banquet{
+  display: inline-block;
+  vertical-align: top;
+  width: 322px;
+  height: 286px;
+  margin-left: -27px;
+  background: #3b2314;
+  text-align: center;
+}
+.forms__item_banquet .forms__title-text span{
+  display: block;
+}
+.forms__item_banquet .forms__item label {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: $tablet-portrait) {
+
+}
+@media (min-width: $desktop) {
+
+}
+@media (min-width: $hd) {
+
+}
