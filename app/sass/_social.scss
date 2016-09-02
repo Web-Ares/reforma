@@ -74,6 +74,22 @@
 
   }
 
+  &_aside-1 .social__item{
+
+    &_fb{
+      background-position: 0 -30px;
+    }
+
+    &_vk{
+      background-position: -36px -30px;
+    }
+
+    &_ig{
+      background-position: -72px -30px;
+    }
+
+  }
+
 }
 
 @media (min-width: $tablet-portrait) {

@@ -5,9 +5,6 @@
 
   &__item{
     position: relative;
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
     margin-bottom: 20px;
     border: 1px solid #eae0d2;
     background-color: #fbf9f6;
@@ -15,9 +12,8 @@
   }
 
   &__img{
-    width: 156px;
     padding: 22px;
-    border-right: 1px solid #eae0d2;
+    border-bottom: 1px solid #eae0d2;
 
     div{
       display: flex;
@@ -25,6 +21,7 @@
       align-items: center;
       width: 112px;
       height: 112px;
+      margin: 0 auto;
       overflow: hidden;
     }
 
@@ -35,7 +32,7 @@
   }
 
   &__content{
-    width: calc( 100% - 156px );
+    width: 100%;
     padding: 15px 0;
     line-height: 25px;
   }
@@ -53,8 +50,8 @@
     transition: color .3s ease, background-color .3s ease;
     -webkit-transition: color .3s ease, background-color .3s ease;
 
-    &:hover{
-      color: #fff;
+    &.active{
+      color: #fff!important;
       background-color: #95c11f;
 
       & + .person__list{
@@ -62,6 +59,15 @@
         visibility: visible;
       }
 
+    }
+
+  }
+
+  &_1 .person__name{
+    color: #006e89;
+
+    &.active{
+      background-color: #006e89;
     }
 
   }
@@ -105,6 +111,10 @@
 
   }
 
+  &_1 .person__list li:before{
+    background-color: #006e89;
+  }
+
   &__link{
     position: absolute;
     right: 0;
@@ -128,18 +138,61 @@
       content: '';
     }
 
-    &:hover{
-      opacity: .8;
-    }
-
   }
 
 }
 
 @media (min-width: $tablet-portrait) {
 
+  .person {
+
+    &__item{
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+    }
+
+    &__img{
+      width: 156px;
+      border-right: 1px solid #eae0d2;
+      border-bottom: 0;
+    }
+
+    &__content {
+      width: calc(100% - 156px);
+    }
+
+  }
+
 }
 
 @media (min-width: $desktop) {
+
+  .person {
+
+    &__name:hover{
+      color: #fff;
+      background-color: #95c11f;
+
+      & + .person__list{
+        opacity: 1;
+        visibility: visible;
+      }
+
+    }
+
+    &__link:hover{
+      opacity: .8;
+    }
+
+  }
+
+  .person_1{
+
+    .person__name:hover{
+      background-color: #006e89;
+    }
+
+  }
 
 }

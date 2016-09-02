@@ -13,15 +13,15 @@
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    height: 49px;
+    min-height: 49px;
     color: #232323;
     text-decoration: underline;
-    padding: 0 5px 0 38px;
+    padding: 5px 5px 5px 38px;
     line-height: 16px;
     background-repeat: no-repeat;
     background-position: -100% -100%;
-    transition: background-color .3s ease;
-    -webkit-transition: background-color .3s ease;
+    transition: background-color .3s ease, color .3s ease;
+    -webkit-transition: background-color .3s ease, color .3s ease;
 
     &_1{
       background-image: url('../img/nav-icon-001.png');
@@ -66,11 +66,11 @@
       background-image: url('../img/nav-icon-004.png');
 
       &:before{
-        background-position: 1px 1px;
+        background-position: 0 5px;
       }
 
       &:after{
-        background-position: 2px -39px;
+        background-position: 0 -27px;
       }
 
     }
@@ -79,11 +79,11 @@
       background-image: url('../img/nav-icon-005.png');
 
       &:before{
-        background-position: 1px 1px;
+        background-position: 4px 4px;
       }
 
       &:after{
-        background-position: 2px -39px;
+        background-position: 4px -29px;
       }
 
     }
@@ -92,11 +92,50 @@
       background-image: url('../img/nav-icon-006.png');
 
       &:before{
-        background-position: 1px 1px;
+        background-position: 4px 8px;
       }
 
       &:after{
-        background-position: 2px -39px;
+        background-position: 4px -19px;
+      }
+
+    }
+
+    &_7{
+      background-image: url('../img/nav-icon-007.png');
+
+      &:before{
+        background-position: 2px 5px;
+      }
+
+      &:after{
+        background-position: 2px -31px;
+      }
+
+    }
+
+    &_8{
+      background-image: url('../img/nav-icon-008.png');
+
+      &:before{
+        background-position: 2px 6px;
+      }
+
+      &:after{
+        background-position: 2px -23px;
+      }
+
+    }
+
+    &_9{
+      background-image: url('../img/nav-icon-009.png');
+
+      &:before{
+        background-position: 4px 2px;
+      }
+
+      &:after{
+        background-position: 4px -34px;
       }
 
     }
@@ -120,6 +159,14 @@
       opacity: 0;
     }
 
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .navigation__item{
+
     &:hover{
       background-color: #95c11f;
 
@@ -135,19 +182,12 @@
 
   }
 
-}
+  .navigation_1{
 
-@media (min-width: $tablet-portrait) {
-
-  .navigation {
-
-  }
-
-}
-
-@media (min-width: $desktop) {
-
-  .navigation {
+    .navigation__item:hover{
+      color: #fff;
+      background-color: #006e89;
+    }
 
   }
 
