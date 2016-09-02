@@ -89,6 +89,22 @@
     }
 
   }
+  &_aside-2 .social__item{
+      background: url('../img/social-aside2.png') no-repeat 0 0;
+
+    &_fb{
+      background-position: 0 0;
+    }
+
+    &_vk{
+      background-position: -36px 0;
+    }
+
+    &_ig{
+      background-position: -72px 0;
+    }
+
+  }
 
 }
 

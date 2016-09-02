@@ -139,6 +139,150 @@
       }
 
     }
+    &_10{
+      background-image: url('../img/nav-icon-sprite.png');
+
+      &:before{
+        background-position: 4px 2px;
+      }
+
+      &:after{
+        background-position: -26px 2px;
+      }
+
+    }
+    &_11{
+      background-image: url('../img/nav-icon-sprite.png');
+
+      &:before{
+        background-position: 2px -53px;
+      }
+
+      &:after{
+        background-position: -26px -53px;
+      }
+
+    }
+    &_12{
+      background-image: url('../img/nav-icon-sprite.png');
+
+      &:before{
+        background-position: 2px -109px;
+      }
+
+      &:after{
+        background-position: -26px -109px;
+      }
+
+    }
+    &_13{
+      background-image: url('../img/nav-icon-sprite.png');
+
+      &:before{
+        background-position: 2px -163px;
+      }
+
+      &:after{
+        background-position: -26px -163px;
+      }
+
+    }
+    &_14{
+      background-image: url('../img/nav-icon-sprite.png');
+
+      &:before{
+        background-position: 2px -218px;
+      }
+
+      &:after{
+        background-position: -26px -218px;
+      }
+
+    }
+    &_15{
+      background-image: url('../img/nav-icon-sprite.png');
+
+      &:before{
+        background-position: 2px -272px;
+      }
+
+      &:after{
+        background-position: -26px -272px;
+      }
+
+    }
+    &_16{
+      background-image: url('../img/nav-icon-sprite2.png');
+
+      &:before{
+        background-position: 4px 2px;
+      }
+
+      &:after{
+        background-position: -26px 2px;
+      }
+
+    }
+    &_17{
+      background-image: url('../img/nav-icon-sprite2.png');
+
+      &:before{
+        background-position: 2px -68px;
+      }
+
+      &:after{
+        background-position: -26px -68px;
+      }
+
+    }
+    &_18{
+      background-image: url('../img/nav-icon-sprite2.png');
+
+      &:before{
+        background-position: 2px -139px;
+      }
+
+      &:after{
+        background-position: -26px -139px;
+      }
+
+    }
+    &_19{
+      background-image: url('../img/nav-icon-sprite2.png');
+
+      &:before{
+        background-position: 2px -203px;
+      }
+
+      &:after{
+        background-position: -26px -203px;
+      }
+
+    }
+    &_20{
+      background-image: url('../img/nav-icon-sprite2.png');
+
+      &:before{
+        background-position: 2px -267px;
+      }
+
+      &:after{
+        background-position: -26px -267px;
+      }
+
+    }
+    &_21{
+      background-image: url('../img/nav-icon-sprite2.png');
+
+      &:before{
+        background-position: 2px -334px;
+      }
+
+      &:after{
+        background-position: -26px -334px;
+      }
+
+    }
 
     &:before, &:after{
       position: absolute;
@@ -162,6 +306,78 @@
   }
 
 }
+.navigation .active{
+  text-decoration: none;
+}
+.navigation_2{
+  background-color: #f5f2e5;
+}
+.navigation_3{
+  background-color: #edeee9;
+}
+.navigation_2 .navigation__item{
+
+  &:hover{
+    background-color: #411095;
+    color:#fff;
+
+    &:before{
+      opacity: 0;
+    }
+
+    &:after{
+      opacity: 1;
+    }
+
+  }
+
+}
+.navigation_3 .navigation__item{
+
+  &:hover{
+    background-color: #3b2314;
+    color:#fff;
+
+    &:before{
+      opacity: 0;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+    }
+
+    &:after{
+      opacity: 1;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+    }
+
+  }
+
+}
+.navigation_2 .active{
+  background-color: #411095;
+  color:#fff;
+
+  &:before{
+    opacity: 0;
+  }
+
+  &:after{
+    opacity: 1;
+  }
+}
+.navigation_3 .active{
+  background-color: #3b2314;
+  color:#fff;
+
+  &:before{
+    opacity: 0;
+  }
+
+  &:after{
+    opacity: 1;
+  }
+}
+
 
 @media (min-width: $desktop) {
 
@@ -176,6 +392,44 @@
 
       &:after{
         opacity: 1;
+      }
+
+    }
+
+  }
+  .navigation_2 .navigation__item{
+
+    &:hover{
+      background-color: #411095;
+      color:#fff;
+
+      &:before{
+        opacity: 0;
+      }
+
+      &:after{
+        opacity: 1;
+      }
+
+    }
+
+  }
+  .navigation_3 .navigation__item{
+
+    &:hover{
+      background-color: #3b2314;
+      color:#fff;
+
+      &:before{
+        opacity: 0;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+      }
+
+      &:after{
+        opacity: 1;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
       }
 
     }
