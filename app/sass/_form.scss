@@ -94,6 +94,11 @@
     &-text{
       font-weight: 600;
       text-transform: uppercase;
+
+      &_center{
+        text-align: center;
+      }
+
     }
 
   }
@@ -158,6 +163,8 @@
 @media (min-width: $desktop) {
 
   .forms {
+    order: 3;
+    width: 100%;
 
     &__item {
       width: 472px;

@@ -138,6 +138,7 @@
 
     &__content{
       display: flex;
+      flex-flow: wrap row;
       justify-content: space-between;
       align-items: flex-start;
     }
