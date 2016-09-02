@@ -28,6 +28,10 @@
             Accordion( $( this ) );
         });
 
+        $.each( $( '.person__item' ), function () {
+            new Person( $( this ) );
+        });
+
     } );
 
     var Accordion = function(obj) {
@@ -128,6 +132,55 @@
             },
             _init = function() {
                 ymaps.ready(_onEvent);
+            };
+
+        //public properties
+
+        //public methods
+
+
+        _init();
+    };
+
+    var Person = function (obj) {
+
+        //private properties
+        var _obj = obj,
+            _name = _obj.find( '.person__name'),
+            _list = _obj.find( '.person__list'),
+            _body = $( 'body');
+
+        //private methods
+        var _onEvent = function(){
+
+                _body.on({
+                    'click': function() {
+                        _list.removeClass( 'active' )
+                    }
+                })
+
+                _list.on({
+                    'click': function( e ) {
+                        e.stopPropagation();
+                    }
+                })
+
+                _name.on({
+                    'click': function( e ) {
+                        e.stopPropagation();
+
+                        if ( _name.hasClass( 'active' ) ){
+                            _name.removeClass( 'active' )
+                        } else {
+                            _name.addClass( 'active' )
+                        }
+
+                    }
+                })
+
+            },
+            _init = function() {
+                _onEvent();
             };
 
         //public properties
