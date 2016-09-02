@@ -1,0 +1,145 @@
+.person {
+  position: relative;
+  font-size: .14em;
+  z-index: 5;
+
+  &__item{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: 20px;
+    border: 1px solid #eae0d2;
+    background-color: #fbf9f6;
+    color: #575757;
+  }
+
+  &__img{
+    width: 156px;
+    padding: 22px;
+    border-right: 1px solid #eae0d2;
+
+    div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 112px;
+      height: 112px;
+      overflow: hidden;
+    }
+
+    img{
+      display: block;
+    }
+
+  }
+
+  &__content{
+    width: calc( 100% - 156px );
+    padding: 15px 0;
+    line-height: 25px;
+  }
+
+  &__about{
+    padding: 0 17px;
+  }
+
+  &__name{
+    padding: 6px 17px 5px;
+    color: #95c11f;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color .3s ease, background-color .3s ease;
+    -webkit-transition: color .3s ease, background-color .3s ease;
+
+    &:hover{
+      color: #fff;
+      background-color: #95c11f;
+
+      & + .person__list{
+        opacity: 1;
+        visibility: visible;
+      }
+
+    }
+
+  }
+
+  &__post{
+    position: relative;
+  }
+
+  &__list{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: -1px;
+    padding: 12px 14px 0;
+    border: 1px solid #eae0d2;
+    background-color: rgba(237,245,215,.9);
+    line-height: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility .3s ease, opacity .3s ease;
+    -webkit-transition: visibility .3s ease, opacity .3s ease;
+    z-index: 2;
+
+    li{
+      position: relative;
+      margin-bottom: 12px;
+      padding-left: 17px;
+
+      &:before{
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: #95c11f;
+        content: '';
+      }
+
+    }
+
+  }
+
+  &__link{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 21px;
+    height: 21px;
+    background-color: #ffd08f;
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+
+    &:before{
+      position: absolute;
+      top: 8px;
+      left: 6px;
+      width: 5px;
+      height: 5px;
+      border-top: 2px solid #604136;
+      border-right: 2px solid #604136;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      content: '';
+    }
+
+    &:hover{
+      opacity: .8;
+    }
+
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+}
+
+@media (min-width: $desktop) {
+
+}
