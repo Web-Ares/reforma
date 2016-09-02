@@ -46,6 +46,34 @@
 
   }
 
+  &_aside{
+    position: static;
+    width: auto;
+    padding-left: 18px;
+    font-size: 0;
+
+    .social__item{
+      width: 25px;
+      height: 25px;
+      margin-right: 11px;
+      background: url('../img/social-aside.png') no-repeat 0 0;
+
+      &_fb{
+        background-position: 0 0;
+      }
+
+      &_vk{
+        background-position: -36px 0;
+      }
+
+      &_ig{
+        background-position: -72px 0;
+      }
+
+    }
+
+  }
+
 }
 
 @media (min-width: $tablet-portrait) {
@@ -79,6 +107,10 @@
     &_header {
       top: 23px;
       right: 308px;
+    }
+
+    &_aside{
+      position: static;
     }
 
   }

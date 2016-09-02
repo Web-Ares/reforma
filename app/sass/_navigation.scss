@@ -1,5 +1,140 @@
 .navigation {
+  margin-bottom: 18px;
+  padding: 5px 10px;
+  background-color: #f5fae9;
   font-size: .14em;
+
+  li{
+    margin-bottom: 19px;
+  }
+
+  &__item{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    height: 49px;
+    color: #232323;
+    text-decoration: underline;
+    padding: 0 5px 0 38px;
+    line-height: 16px;
+    background-repeat: no-repeat;
+    background-position: -100% -100%;
+    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease;
+
+    &_1{
+      background-image: url('../img/nav-icon-001.png');
+
+      &:before{
+        background-position: 8px 7px;
+      }
+
+      &:after{
+        background-position: 9px -39px;
+      }
+
+    }
+
+    &_2{
+      background-image: url('../img/nav-icon-002.png');
+
+      &:before{
+        background-position: 1px 1px;
+      }
+
+      &:after{
+        background-position: 2px -39px;
+      }
+
+    }
+
+    &_3{
+      background-image: url('../img/nav-icon-003.png');
+
+      &:before{
+        background-position: 1px 1px;
+      }
+
+      &:after{
+        background-position: 2px -39px;
+      }
+
+    }
+
+    &_4{
+      background-image: url('../img/nav-icon-004.png');
+
+      &:before{
+        background-position: 1px 1px;
+      }
+
+      &:after{
+        background-position: 2px -39px;
+      }
+
+    }
+
+    &_5{
+      background-image: url('../img/nav-icon-005.png');
+
+      &:before{
+        background-position: 1px 1px;
+      }
+
+      &:after{
+        background-position: 2px -39px;
+      }
+
+    }
+
+    &_6{
+      background-image: url('../img/nav-icon-006.png');
+
+      &:before{
+        background-position: 1px 1px;
+      }
+
+      &:after{
+        background-position: 2px -39px;
+      }
+
+    }
+
+    &:before, &:after{
+      position: absolute;
+      top: 50%;
+      left: 2px;
+      width: 30px;
+      height: 31px;
+      background-image: inherit;
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transition: opacity .3s ease;
+      -webkit-transition: opacity .3s ease;
+      content: '';
+    }
+
+    &:after{
+      opacity: 0;
+    }
+
+    &:hover{
+      background-color: #95c11f;
+
+      &:before{
+        opacity: 0;
+      }
+
+      &:after{
+        opacity: 1;
+      }
+
+    }
+
+  }
+
 }
 
 @media (min-width: $tablet-portrait) {
