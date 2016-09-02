@@ -119,6 +119,33 @@
   transform: translateY(0) !important;
   -webkit-transform: translateY(0) !important;
 }
+.tabs__controls-wrap_schedule div{
+  width: 100%;
+  margin-right: 5px;
+  margin-bottom: 13px;
+}
+.tabs__controls-wrap_schedule div span{
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: opacity .3s ease;
+}
+.tabs__controls-wrap_schedule:after{
+  display: none;
+}
+.tabs__controls-wrap_schedule div.active {
+  opacity: .8;
+}
+.tabs__controls-wrap_schedule div:hover{
+  opacity: .8;
+}
+.tabs__wrapper_schedule{
+  margin-bottom: 59px;
+}
 
 @media (min-width: $tablet-portrait) {
   .tabs__controls-wrap div {
@@ -126,6 +153,11 @@
     display: inline-block;
     vertical-align: top;
     width: 31%;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .tabs__controls-wrap_schedule div{
+    width: 105px;
   }
 
 }
