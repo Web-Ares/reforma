@@ -24,7 +24,7 @@
             new Tabs( $( this ) );
         });
 
-        $( '.aside-menu__wrap' ).each( function() {
+        $( '.cafe-menu' ).each( function() {
             Accordion( $( this ) );
         });
 
@@ -34,7 +34,7 @@
 
         //private properties
         var _obj = $(this),
-            _items=$('.aside-menu__wrap>li');
+            _items=$('.cafe-menu>li');
 
         //private methods
         var _addEvents = function() {
@@ -60,13 +60,13 @@
                     }
                 });
 
-                $('body').on( {
+                /*$('body').on( {
 
                     click: function(e) {
 
                         var elem=$(e.target);
 
-                        var curElem = $( '.aside-menu__wrap>li' ),
+                        var curElem = $( '.cafe-menu>li' ),
                             curMenu= curElem.find( 'ul' );
 
                         if( curMenu.is( ':visible' ) ) {
@@ -74,7 +74,7 @@
                             curElem.removeClass( 'open' );
                         }
                     }
-                });
+                });*/
 
             },
             _init = function() {
