@@ -46,11 +46,29 @@
   border-left: 5px solid #8e29d5;
   background: #e5c3fd;
 }
+.schedule__base{
+  border-right: 5px solid #ff9c00;
+  border-left: 5px solid #ff9c00;
+  background: #fdc56c;
+}
+.schedule__studio{
+  border-right: 5px solid #8dbf02;
+  border-left: 5px solid #8dbf02;
+  background: #d4ed8f;
+}
+.schedule__section{
+  border-right: 5px solid #029ec4;
+  border-left: 5px solid #029ec4;
+  background: #85e5fc;
+}
 .schedule__jumper_color{background: #f0e294;}
 .schedule__kids_color {background: #fcd091;}
 .schedule__teenagers_color{background: #ffb8aa;}
 .schedule__holidays_color{background: #d4ed8f;}
 .schedule__me-and-kid_color{background: #e5c3fd;}
+.schedule__base_color{background: #fdc56c;}
+.schedule__studio_color{background: #d4ed8f;}
+.schedule__section_color{background: #85e5fc;}
 .schedule__table{
   padding-left: 10px;
 }
@@ -69,6 +87,11 @@
   font-size: 11px;
   line-height: 11px;
 }
+.schedule__table div span{
+  display: block;
+  color: #006e89;
+}
+
 .schedule__table div.schedule__time{
   width: 100%;
   line-height: 30px;

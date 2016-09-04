@@ -143,11 +143,11 @@
       background-image: url('../img/nav-icon-sprite.png');
 
       &:before{
-        background-position: 4px 2px;
+        background-position: 0 2px;
       }
 
       &:after{
-        background-position: -26px 2px;
+        background-position: -28px 2px;
       }
 
     }
@@ -155,11 +155,11 @@
       background-image: url('../img/nav-icon-sprite.png');
 
       &:before{
-        background-position: 2px -53px;
+        background-position: 0 -53px;
       }
 
       &:after{
-        background-position: -26px -53px;
+        background-position: -28px -53px;
       }
 
     }
@@ -167,11 +167,11 @@
       background-image: url('../img/nav-icon-sprite.png');
 
       &:before{
-        background-position: 2px -109px;
+        background-position: 0 -109px;
       }
 
       &:after{
-        background-position: -26px -109px;
+        background-position: -28px -109px;
       }
 
     }
@@ -179,11 +179,11 @@
       background-image: url('../img/nav-icon-sprite.png');
 
       &:before{
-        background-position: 2px -163px;
+        background-position: 0 -163px;
       }
 
       &:after{
-        background-position: -26px -163px;
+        background-position: -28px -163px;
       }
 
     }
@@ -191,11 +191,11 @@
       background-image: url('../img/nav-icon-sprite.png');
 
       &:before{
-        background-position: 2px -218px;
+        background-position: 0 -218px;
       }
 
       &:after{
-        background-position: -26px -218px;
+        background-position: -28px -218px;
       }
 
     }
@@ -203,11 +203,11 @@
       background-image: url('../img/nav-icon-sprite.png');
 
       &:before{
-        background-position: 2px -272px;
+        background-position: 0 -272px;
       }
 
       &:after{
-        background-position: -26px -272px;
+        background-position: -28px -272px;
       }
 
     }
@@ -215,11 +215,11 @@
       background-image: url('../img/nav-icon-sprite2.png');
 
       &:before{
-        background-position: 4px 2px;
+        background-position: 3px 2px;
       }
 
       &:after{
-        background-position: -26px 2px;
+        background-position: -23px 2px;
       }
 
     }
@@ -227,11 +227,11 @@
       background-image: url('../img/nav-icon-sprite2.png');
 
       &:before{
-        background-position: 2px -68px;
+        background-position: 3px -68px;
       }
 
       &:after{
-        background-position: -26px -68px;
+        background-position: -23px -68px;
       }
 
     }
@@ -239,11 +239,11 @@
       background-image: url('../img/nav-icon-sprite2.png');
 
       &:before{
-        background-position: 2px -139px;
+        background-position: 3px -139px;
       }
 
       &:after{
-        background-position: -26px -139px;
+        background-position: -23px -139px;
       }
 
     }
@@ -251,11 +251,11 @@
       background-image: url('../img/nav-icon-sprite2.png');
 
       &:before{
-        background-position: 2px -203px;
+        background-position: 3px -203px;
       }
 
       &:after{
-        background-position: -26px -203px;
+        background-position: -23px -203px;
       }
 
     }
@@ -263,11 +263,11 @@
       background-image: url('../img/nav-icon-sprite2.png');
 
       &:before{
-        background-position: 2px -267px;
+        background-position: 3px -267px;
       }
 
       &:after{
-        background-position: -26px -267px;
+        background-position: -23px -267px;
       }
 
     }
@@ -275,11 +275,11 @@
       background-image: url('../img/nav-icon-sprite2.png');
 
       &:before{
-        background-position: 2px -334px;
+        background-position: 3px -334px;
       }
 
       &:after{
-        background-position: -26px -334px;
+        background-position: -23px -334px;
       }
 
     }
@@ -294,8 +294,8 @@
       background-repeat: no-repeat;
       transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
-      transition: opacity .3s ease;
-      -webkit-transition: opacity .3s ease;
+      /*transition: all .3s ease;
+      -webkit-transition:all .3s ease;*/
       content: '';
     }
 
@@ -340,18 +340,43 @@
 
     &:before{
       opacity: 0;
-      transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
     }
 
     &:after{
       opacity: 1;
-      transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
     }
 
   }
 
+}
+.navigation_4 .navigation__item{
+
+  &:hover{
+    background-color: #006e89;
+    color:#fff;
+
+    &:before{
+      opacity: 0;
+    }
+
+    &:after{
+      opacity: 1;
+    }
+
+  }
+
+}
+.navigation .active{
+  background-color: #82ae0b;
+  color:#fff;
+
+  &:before{
+    opacity: 0;
+  }
+
+  &:after{
+    opacity: 1;
+  }
 }
 .navigation_2 .active{
   background-color: #411095;
@@ -378,6 +403,18 @@
   }
 }
 
+.navigation_4 .active{
+  background-color: #006e89;
+  color:#fff;
+
+  &:before{
+    opacity: 0;
+  }
+
+  &:after{
+    opacity: 1;
+  }
+}
 
 @media (min-width: $desktop) {
 
@@ -422,14 +459,10 @@
 
       &:before{
         opacity: 0;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
       }
 
       &:after{
         opacity: 1;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
       }
 
     }
