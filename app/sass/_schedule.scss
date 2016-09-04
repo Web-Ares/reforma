@@ -114,6 +114,9 @@
   line-height: 32px;
   text-align: center;
 }
+.tabs__controls-wrap_schedule .schedule-acts__adult{
+  float: none;
+}
 @media (min-width: $tablet-portrait) {
 
   .schedule__table{
@@ -158,6 +161,9 @@
   }
   .schedule__same-time div {
     border-bottom: 1px solid #fff;
+  }
+  .tabs__controls-wrap_schedule .schedule-acts__adult{
+    float: right;
   }
 }
 
