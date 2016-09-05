@@ -10,6 +10,7 @@
   font-size: 12px;
   line-height: 31px;
   color: #000;
+  font-weight: 500;
   text-transform: uppercase;
   text-decoration: underline;
 }
@@ -87,9 +88,12 @@
   font-size: 11px;
   line-height: 11px;
 }
-.schedule__table div span{
-  display: block;
+.schedule__link{
+  display: none;
   color: #006e89;
+}
+.schedule__link:hover{
+  text-decoration: underline;
 }
 
 .schedule__table div.schedule__time{
@@ -117,6 +121,59 @@
 .tabs__controls-wrap_schedule .schedule-acts__adult{
   float: none;
 }
+.schedule__all-open .schedule__link{
+  display: block;
+}
+.schedule__table div {
+}
+
+.schedule__all-open{
+}
+.schedule__base-open .schedule__base_color{
+  color: #000;
+}
+.schedule__me-and-kid-open .schedule__jumper_color,
+.schedule__me-and-kid-open .schedule__kids_color,
+.schedule__me-and-kid-open .schedule__teenagers_color,
+.schedule__me-and-kid-open .schedule__holidays_color,
+.schedule__holidays-open .schedule__me-and-kid_color,
+.schedule__holidays-open .schedule__teenagers_color,
+.schedule__holidays-open .schedule__kids_color,
+.schedule__holidays-open .schedule__jumper_color,
+.schedule__teenagers-open .schedule__holidays_color,
+.schedule__teenagers-open .schedule__me-and-kid_color,
+.schedule__teenagers-open .schedule__kids_color,
+.schedule__teenagers-open .schedule__jumper_color,
+.schedule__kids-open .schedule__jumper_color,
+.schedule__kids-open .schedule__teenagers_color,
+.schedule__kids-open .schedule__holidays_color,
+.schedule__kids-open .schedule__me-and-kid_color,
+.schedule__jumper-open .schedule__kids_color,
+.schedule__jumper-open .schedule__teenagers_color,
+.schedule__jumper-open .schedule__holidays_color,
+.schedule__jumper-open .schedule__me-and-kid_color,
+.schedule__base-open .schedule__studio_color,
+.schedule__base-open .schedule__section_color,
+.schedule__section-open .schedule__base_color,
+.schedule__section-open .schedule__studio_color,
+.schedule__studio-open .schedule__section_color,
+.schedule__studio-open .schedule__base_color{
+  background: transparent;
+  color: transparent;
+}
+.schedule__studio-open .schedule__studio_color{
+  color: #000;
+}
+.schedule__section-open {
+  color: #000;
+}
+.schedule__base-open .schedule__base_color .schedule__link,
+.schedule__studio-open .schedule__studio_color .schedule__link,
+.schedule__section-open .schedule__section_color .schedule__link{
+  display: block;
+}
+
+
 @media (min-width: $tablet-portrait) {
 
   .schedule__table{

@@ -152,31 +152,31 @@
                 (действует с 30 мая)
             </div>
 
-            <!-- tabs -->
-            <div class="tabs">
+            <!-- filter -->
+            <div class="filter">
 
                 <!-- tabs__controls -->
                 <div class="tabs__controls">
 
                     <!-- tabs__controls-wrap -->
                     <div class="tabs__controls-wrap tabs__controls-wrap_schedule">
-                        <div class="active">
-                            <span class="schedule__all">
+                        <div>
+                            <span class="schedule__btn schedule__all" data-filter="schedule__all-open">
                                 все
                             </span>
                         </div>
                         <div>
-                            <span class="schedule__base">
+                            <span class="schedule__btn schedule__base"  data-filter="schedule__base-open">
                                 база
                             </span>
                         </div>
                         <div>
-                            <span class="schedule__studio">
+                            <span class="schedule__btn schedule__studio"  data-filter="schedule__studio-open">
                                 студия
                             </span>
                         </div>
                         <div>
-                            <span class="schedule__section">
+                            <span class="schedule__btn schedule__section"  data-filter="schedule__section-open">
                                 секция
                             </span>
                         </div>
@@ -192,7 +192,7 @@
                 <!-- tabs__wrapper -->
                 <div class="tabs__wrapper tabs__wrapper_schedule">
 
-                    <div>
+                    <div class="schedule__all-open">
 
                         <ul class="schedule__table">
 
@@ -209,15 +209,15 @@
 
                             <li>
                                 <div class="schedule__time">9:00</div>
-                                <div class="schedule__base_color"><span>Bums + Press</span>
+                                <div class="schedule__base_color"><a class="schedule__link" href="#">Bums + Press</a>
                                     Динар
                                 </div>
                                 <div></div>
-                                <div class="schedule__studio_color"><span>Body Sсulpt</span>
+                                <div class="schedule__studio_color"><a class="schedule__link" href="#">Body Sсulpt</a>
                                     Валерия
                                 </div>
                                 <div></div>
-                                <div class="schedule__base_color"><span>Bums + Press</span>
+                                <div class="schedule__base_color"><a class="schedule__link" href="#">Bums + Press</a>
                                     Динар
                                 </div>
                                 <div></div>
@@ -225,11 +225,11 @@
                             </li>
                             <li>
                                 <div class="schedule__time">10:00</div>
-                                <div class="schedule__section_color"><span>JUB+Stretch</span>Валерия</div>
-                                <div class="schedule__studio_color"><span>TBW</span>Ильгиз</div>
-                                <div class="schedule__base_color"><span>Fitball</span>Ильшат</div>
-                                <div class="schedule__section_color"><span>BOSU</span>Динар</div>
-                                <div class="schedule__section_color"><span>JUB+Stretch</span>Валерия</div>
+                                <div class="schedule__section_color"><a class="schedule__link" href="#">JUB+Stretch</a>Валерия</div>
+                                <div class="schedule__studio_color"><a class="schedule__link" href="#">TBW</a>Ильгиз</div>
+                                <div class="schedule__base_color"><a class="schedule__link" href="#">Fitball</a>Ильшат</div>
+                                <div class="schedule__section_color"><a class="schedule__link" href="#">BOSU</a>Динар</div>
+                                <div class="schedule__section_color"><a class="schedule__link" href="#">JUB+Stretch</a>Валерия</div>
                                 <div></div>
                                 <div></div>
                             </li>
@@ -246,11 +246,11 @@
                             <li>
                                 <div class="schedule__time">11:00</div>
                                 <div></div>
-                                <div class="schedule__section_color"><span>Yoga Fit</span> Арина</div>
-                                <div class="schedule__base_color"><span>Stretching</span> Арина</div>
-                                <div class="schedule__studio_color"><span>Mind&Body</span> Арина</div>
+                                <div class="schedule__section_color"><a class="schedule__link" href="#">Yoga Fit</a> Арина</div>
+                                <div class="schedule__base_color"><a class="schedule__link" href="#">Stretching</a> Арина</div>
+                                <div class="schedule__studio_color"><a class="schedule__link" href="#">Mind&Body</a> Арина</div>
                                 <div></div>
-                                <div class="schedule__base_color"><span>Bums + Press</span> Динар</div>
+                                <div class="schedule__base_color"><a class="schedule__link" href="#">Bums + Press</a> Динар</div>
                                 <div></div>
                             </li>
                             <li>
@@ -260,7 +260,7 @@
                                 <div></div>
                                 <div></div>
                                 <div></div>
-                                <div class="schedule__section_color"><span>JUB+Stretch</span> Валерия</div>
+                                <div class="schedule__section_color"><a class="schedule__link" href="#">JUB+Stretch</a> Валерия</div>
                                 <div></div>
                             </li>
                             <li class="desktop-no">
@@ -280,8 +280,8 @@
                                 <div></div>
                                 <div></div>
                                 <div></div>
-                                <div class="schedule__studio_color"><span>Hi-Low Dance</span> Ильшат</div>
-                                <div class="schedule__studio_color"><span>Dance Mix</span> Дина</div>
+                                <div class="schedule__studio_color"><a class="schedule__link" href="#">Hi-Low Dance</a> Ильшат</div>
+                                <div class="schedule__studio_color"><a class="schedule__link" href="#">Dance Mix</a> Дина</div>
                             </li>
                             <li>
                                 <div class="schedule__time">14:00</div>
@@ -291,7 +291,7 @@
                                 <div></div>
                                 <div></div>
                                 <div></div>
-                                <div class="schedule__section_color"><span>BOSU</span> Валерия</div>
+                                <div class="schedule__section_color"><a class="schedule__link" href="#">BOSU</a> Валерия</div>
                             </li>
                             <li class="desktop-no">
                                 <div class="schedule__time">Время</div>
@@ -311,7 +311,7 @@
                                 <div></div>
                                 <div></div>
                                 <div></div>
-                                <div class="schedule__section_color"><span>Stretch (30min)</span> Динар</div>
+                                <div class="schedule__section_color"><a class="schedule__link" href="#">Stretch (30min)</a> Динар</div>
                             </li>
                             <li>
                                 <div class="schedule__time">17:00</div>
@@ -321,7 +321,7 @@
                                 <div></div>
                                 <div></div>
                                 <div></div>
-                                <div class="schedule__base_color"><span>Round Training</span> Динар</div>
+                                <div class="schedule__base_color"><a class="schedule__link" href="#">Round Training</a> Динар</div>
                             </li>
                             <li class="desktop-no">
                                 <div class="schedule__time">Время</div>
@@ -335,11 +335,11 @@
                             </li>
                             <li>
                                 <div class="schedule__time">18:00</div>
-                                <div class="schedule__studio_color"><span>Hi-Low Dance</span> Ильшат</div>
-                                <div class="schedule__base_color"><span>Step 1</span> Ильшат</div>
-                                <div class="schedule__section_color"><span>PortDeBras *</span> Ильшат</div>
-                                <div class="schedule__studio_color"><span>Step 2</span> Арина</div>
-                                <div class="schedule__section_color"><span>Hi-Low Dance</span> Ильшат</div>
+                                <div class="schedule__studio_color"><a class="schedule__link" href="#">Hi-Low Dance</a> Ильшат</div>
+                                <div class="schedule__base_color"><a class="schedule__link" href="#">Step 1</a> Ильшат</div>
+                                <div class="schedule__section_color"><a class="schedule__link" href="#">PortDeBras *</a> Ильшат</div>
+                                <div class="schedule__studio_color"><a class="schedule__link" href="#">Step 2</a> Арина</div>
+                                <div class="schedule__section_color"><a class="schedule__link" href="#">Hi-Low Dance</a> Ильшат</div>
                                 <div></div>
                                 <div></div>
                             </li>
@@ -365,22 +365,22 @@
                             </li>
                             <li>
                                 <div class="schedule__time"></div>
-                                <div class="schedule__section_color"><span>Latina</span> Рустам</div>
-                                <div class="schedule__studio_color"><span>Dance Mix</span> Дина</div>
-                                <div class="schedule__base_color"><span>Dance Mix</span> Арина</div>
-                                <div class="schedule__section_color"><span>Lady Style</span> Дина</div>
-                                <div class="schedule__section_color"><span>Latina</span> Рустам</div>
+                                <div class="schedule__section_color"><a class="schedule__link" href="#">Latina</a> Рустам</div>
+                                <div class="schedule__studio_color"><a class="schedule__link" href="#">Dance Mix</a> Дина</div>
+                                <div class="schedule__base_color"><a class="schedule__link" href="#">Dance Mix</a> Арина</div>
+                                <div class="schedule__section_color"><a class="schedule__link" href="#">Lady Style</a> Дина</div>
+                                <div class="schedule__section_color"><a class="schedule__link" href="#">Latina</a> Рустам</div>
                                 <div></div>
                                 <div></div>
                             </li>
 
                             <li class="schedule__same-time">
                                 <div class="schedule__time">20:00</div>
-                                <div class="schedule__studio_color"><span>Boxing</span> Артем</div>
-                                <div class=" schedule__section_color"><span>Taiji quan</span> Анвар</div>
-                                <div class="schedule__base_color"><span>Cycle</span> Динар</div>
-                                <div class="schedule__section_color"><span>Wushu</span> Анвар</div>
-                                <div class="schedule__studio_color"><span>Boxing</span> Артем</div>
+                                <div class="schedule__studio_color"><a class="schedule__link" href="#">Boxing</a> Артем</div>
+                                <div class=" schedule__section_color"><a class="schedule__link" href="#">Taiji quan</a> Анвар</div>
+                                <div class="schedule__base_color"><a class="schedule__link" href="#">Cycle</a> Динар</div>
+                                <div class="schedule__section_color"><a class="schedule__link" href="#">Wushu</a> Анвар</div>
+                                <div class="schedule__studio_color"><a class="schedule__link" href="#">Boxing</a> Артем</div>
                                 <div></div>
                                 <div></div>
                             </li>
@@ -396,658 +396,11 @@
                             </li>
                             <li>
                                 <div class="schedule__time"></div>
-                                <div class="schedule__section_color"><span>Mind&Body</span> Арина</div>
-                                <div class="schedule__base_color"><span>Press+Stretch</span> Арина</div>
-                                <div class="schedule__section_color"><span>Wushu</span> Анвар</div>
-                                <div class="schedule__base_color"><span>Press+Stretch</span> Валерия</div>
-                                <div class="schedule__section_color"><span>Mind&Body</span> Арина</div>
-                                <div></div>
-                                <div></div>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                    <div>
-                        <ul class="schedule__table">
-
-                            <li>
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-
-                            <li>
-                                <div class="schedule__time">9:00</div>
-                                <div class="schedule__base_color"><span>Bums + Press</span>
-                                    Динар
-                                </div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="schedule__base_color"><span>Bums + Press</span>
-                                    Динар
-                                </div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">10:00</div>
-                                <div></div>
-                                <div></div>
-                                <div class="schedule__base_color"><span>Fitball</span>Ильшат</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li class="desktop-no">
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">11:00</div>
-                                <div></div>
-                                <div></div>
-                                <div class="schedule__base_color"><span>Stretching</span> Арина</div>
-                                <div></div>
-                                <div></div>
-                                <div class="schedule__base_color"><span>Bums + Press</span> Динар</div>
-                                <div></div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">12:00</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li class="desktop-no">
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">13:00</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">14:00</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li class="desktop-no">
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">16:00</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">17:00</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="schedule__base_color"><span>Round Training</span> Динар</div>
-                            </li>
-                            <li class="desktop-no">
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">18:00</div>
-                                <div></div>
-                                <div class="schedule__base_color"><span>Step 1</span> Ильшат</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li class="schedule__same-time">
-                                <div class="schedule__time rowspan">19:00</div>
-                                <div></div>
-                                <div class="schedule__base_color"><span>PowerBall Training</span> Ильшат</div>
-                                <div></div>
-                                <div class="schedule__base_color"><span>Round Training</span> Динар</div>
-                                <div class="schedule__base_color"><span>Body Sсulpt</span> Динар</div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li class="desktop-no">
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time"></div>
-                                <div></div>
-                                <div></div>
-                                <div class="schedule__base_color"><span>Dance Mix</span> Арина</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </li>
-
-                            <li class="schedule__same-time">
-                                <div class="schedule__time">20:00</div>
-                                <div></div>
-                                <div></div>
-                                <div class="schedule__base_color"><span>Cycle</span> Динар</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li class="desktop-no">
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time"></div>
-                                <div></div>
-                                <div class="schedule__base_color"><span>Press+Stretch</span> Арина</div>
-                                <div></div>
-                                <div class="schedule__base_color"><span>Press+Stretch</span> Валерия</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                    <div>
-
-                        <ul class="schedule__table">
-
-                            <li>
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-
-                            <li>
-                                <div class="schedule__time">9:00</div>
-                                <div class="schedule__base_color"><span>Bums + Press</span>
-                                    Динар
-                                </div>
-                                <div></div>
-                                <div class="schedule__studio_color"><span>Body Sсulpt</span>
-                                    Валерия
-                                </div>
-                                <div></div>
-                                <div class="schedule__base_color"><span>Bums + Press</span>
-                                    Динар
-                                </div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">10:00</div>
-                                <div class="schedule__section_color"><span>JUB+Stretch</span>Валерия</div>
-                                <div class="schedule__studio_color"><span>TBW</span>Ильгиз</div>
-                                <div class="schedule__base_color"><span>Fitball</span>Ильшат</div>
-                                <div class="schedule__section_color"><span>BOSU</span>Динар</div>
-                                <div class="schedule__section_color"><span>JUB+Stretch</span>Валерия</div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li class="desktop-no">
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">11:00</div>
-                                <div></div>
-                                <div class="schedule__section_color"><span>Yoga Fit</span> Арина</div>
-                                <div class="schedule__base_color"><span>Stretching</span> Арина</div>
-                                <div class="schedule__studio_color"><span>Mind&Body</span> Арина</div>
-                                <div></div>
-                                <div class="schedule__base_color"><span>Bums + Press</span> Динар</div>
-                                <div></div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">12:00</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="schedule__section_color"><span>JUB+Stretch</span> Валерия</div>
-                                <div></div>
-                            </li>
-                            <li class="desktop-no">
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">13:00</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="schedule__studio_color"><span>Hi-Low Dance</span> Ильшат</div>
-                                <div class="schedule__studio_color"><span>Dance Mix</span> Дина</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">14:00</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="schedule__section_color"><span>BOSU</span> Валерия</div>
-                            </li>
-                            <li class="desktop-no">
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">16:00</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="schedule__section_color"><span>Stretch (30min)</span> Динар</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">17:00</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="schedule__base_color"><span>Round Training</span> Динар</div>
-                            </li>
-                            <li class="desktop-no">
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">18:00</div>
-                                <div class="schedule__studio_color"><span>Hi-Low Dance</span> Ильшат</div>
-                                <div class="schedule__base_color"><span>Step 1</span> Ильшат</div>
-                                <div class="schedule__section_color"><span>PortDeBras *</span> Ильшат</div>
-                                <div class="schedule__studio_color"><span>Step 2</span> Арина</div>
-                                <div class="schedule__section_color"><span>Hi-Low Dance</span> Ильшат</div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li class="schedule__same-time">
-                                <div class="schedule__time rowspan">19:00</div>
-                                <div class="schedule__studio_color"><span>Body Sсulpt</span> Динар</div>
-                                <div class="schedule__base_color"><span>PowerBall Training</span> Ильшат</div>
-                                <div class="schedule__studio_color"><span>Bums+Press</span> Валерия</div>
-                                <div class="schedule__base_color"><span>Round Training</span> Динар</div>
-                                <div class="schedule__base_color"><span>Body Sсulpt</span> Динар</div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li class="desktop-no">
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time"></div>
-                                <div class="schedule__section_color"><span>Latina</span> Рустам</div>
-                                <div class="schedule__studio_color"><span>Dance Mix</span> Дина</div>
-                                <div class="schedule__base_color"><span>Dance Mix</span> Арина</div>
-                                <div class="schedule__section_color"><span>Lady Style</span> Дина</div>
-                                <div class="schedule__section_color"><span>Latina</span> Рустам</div>
-                                <div></div>
-                                <div></div>
-                            </li>
-
-                            <li class="schedule__same-time">
-                                <div class="schedule__time">20:00</div>
-                                <div class="schedule__studio_color"><span>Boxing</span> Артем</div>
-                                <div class=" schedule__section_color"><span>Taiji quan</span> Анвар</div>
-                                <div class="schedule__base_color"><span>Cycle</span> Динар</div>
-                                <div class="schedule__section_color"><span>Wushu</span> Анвар</div>
-                                <div class="schedule__studio_color"><span>Boxing</span> Артем</div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li class="desktop-no">
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time"></div>
-                                <div class="schedule__section_color"><span>Mind&Body</span> Арина</div>
-                                <div class="schedule__base_color"><span>Press+Stretch</span> Арина</div>
-                                <div class="schedule__section_color"><span>Wushu</span> Анвар</div>
-                                <div class="schedule__base_color"><span>Press+Stretch</span> Валерия</div>
-                                <div class="schedule__section_color"><span>Mind&Body</span> Арина</div>
-                                <div></div>
-                                <div></div>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                    <div>
-
-                        <ul class="schedule__table">
-
-                            <li>
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-
-                            <li>
-                                <div class="schedule__time">9:00</div>
-                                <div class="schedule__base_color"><span>Bums + Press</span>
-                                    Динар
-                                </div>
-                                <div></div>
-                                <div class="schedule__studio_color"><span>Body Sсulpt</span>
-                                    Валерия
-                                </div>
-                                <div></div>
-                                <div class="schedule__base_color"><span>Bums + Press</span>
-                                    Динар
-                                </div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">10:00</div>
-                                <div class="schedule__section_color"><span>JUB+Stretch</span>Валерия</div>
-                                <div class="schedule__studio_color"><span>TBW</span>Ильгиз</div>
-                                <div class="schedule__base_color"><span>Fitball</span>Ильшат</div>
-                                <div class="schedule__section_color"><span>BOSU</span>Динар</div>
-                                <div class="schedule__section_color"><span>JUB+Stretch</span>Валерия</div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li class="desktop-no">
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">11:00</div>
-                                <div></div>
-                                <div class="schedule__section_color"><span>Yoga Fit</span> Арина</div>
-                                <div class="schedule__base_color"><span>Stretching</span> Арина</div>
-                                <div class="schedule__studio_color"><span>Mind&Body</span> Арина</div>
-                                <div></div>
-                                <div class="schedule__base_color"><span>Bums + Press</span> Динар</div>
-                                <div></div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">12:00</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="schedule__section_color"><span>JUB+Stretch</span> Валерия</div>
-                                <div></div>
-                            </li>
-                            <li class="desktop-no">
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">13:00</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="schedule__studio_color"><span>Hi-Low Dance</span> Ильшат</div>
-                                <div class="schedule__studio_color"><span>Dance Mix</span> Дина</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">14:00</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="schedule__section_color"><span>BOSU</span> Валерия</div>
-                            </li>
-                            <li class="desktop-no">
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">16:00</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="schedule__section_color"><span>Stretch (30min)</span> Динар</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">17:00</div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div class="schedule__base_color"><span>Round Training</span> Динар</div>
-                            </li>
-                            <li class="desktop-no">
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time">18:00</div>
-                                <div class="schedule__studio_color"><span>Hi-Low Dance</span> Ильшат</div>
-                                <div class="schedule__base_color"><span>Step 1</span> Ильшат</div>
-                                <div class="schedule__section_color"><span>PortDeBras *</span> Ильшат</div>
-                                <div class="schedule__studio_color"><span>Step 2</span> Арина</div>
-                                <div class="schedule__section_color"><span>Hi-Low Dance</span> Ильшат</div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li class="schedule__same-time">
-                                <div class="schedule__time rowspan">19:00</div>
-                                <div class="schedule__studio_color"><span>Body Sсulpt</span> Динар</div>
-                                <div class="schedule__base_color"><span>PowerBall Training</span> Ильшат</div>
-                                <div class="schedule__studio_color"><span>Bums+Press</span> Валерия</div>
-                                <div class="schedule__base_color"><span>Round Training</span> Динар</div>
-                                <div class="schedule__base_color"><span>Body Sсulpt</span> Динар</div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li class="desktop-no">
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time"></div>
-                                <div class="schedule__section_color"><span>Latina</span> Рустам</div>
-                                <div class="schedule__studio_color"><span>Dance Mix</span> Дина</div>
-                                <div class="schedule__base_color"><span>Dance Mix</span> Арина</div>
-                                <div class="schedule__section_color"><span>Lady Style</span> Дина</div>
-                                <div class="schedule__section_color"><span>Latina</span> Рустам</div>
-                                <div></div>
-                                <div></div>
-                            </li>
-
-                            <li class="schedule__same-time">
-                                <div class="schedule__time">20:00</div>
-                                <div class="schedule__studio_color"><span>Boxing</span> Артем</div>
-                                <div class=" schedule__section_color"><span>Taiji quan</span> Анвар</div>
-                                <div class="schedule__base_color"><span>Cycle</span> Динар</div>
-                                <div class="schedule__section_color"><span>Wushu</span> Анвар</div>
-                                <div class="schedule__studio_color"><span>Boxing</span> Артем</div>
-                                <div></div>
-                                <div></div>
-                            </li>
-                            <li class="desktop-no">
-                                <div class="schedule__time">Время</div>
-                                <div>ПН</div>
-                                <div>ВТ</div>
-                                <div>СР</div>
-                                <div>ЧТ</div>
-                                <div>ПТ</div>
-                                <div>СБ</div>
-                                <div>ВС</div>
-                            </li>
-                            <li>
-                                <div class="schedule__time"></div>
-                                <div class="schedule__section_color"><span>Mind&Body</span> Арина</div>
-                                <div class="schedule__base_color"><span>Press+Stretch</span> Арина</div>
-                                <div class="schedule__section_color"><span>Wushu</span> Анвар</div>
-                                <div class="schedule__base_color"><span>Press+Stretch</span> Валерия</div>
-                                <div class="schedule__section_color"><span>Mind&Body</span> Арина</div>
+                                <div class="schedule__section_color"><a class="schedule__link" href="#">Mind&Body</a> Арина</div>
+                                <div class="schedule__base_color"><a class="schedule__link" href="#">Press+Stretch</a> Арина</div>
+                                <div class="schedule__section_color"><a class="schedule__link" href="#">Wushu</a> Анвар</div>
+                                <div class="schedule__base_color"><a class="schedule__link" href="#">Press+Stretch</a> Валерия</div>
+                                <div class="schedule__section_color"><a class="schedule__link" href="#">Mind&Body</a> Арина</div>
                                 <div></div>
                                 <div></div>
                             </li>
@@ -1060,7 +413,7 @@
                 <!-- /tabs__wrapper -->
 
             </div>
-            <!-- /tabs -->
+            <!-- /filter -->
 
         </div>
         <!-- /site__wrap -->

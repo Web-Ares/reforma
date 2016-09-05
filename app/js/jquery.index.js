@@ -32,6 +32,16 @@
             new Person( $( this ) );
         });
 
+        $('.schedule__btn').click(function () {
+
+            var curElem = $(this),
+                curClass = curElem.attr( 'data-filter' );
+            $( '.tabs__wrapper_schedule>div').removeClass();
+            $( '.tabs__wrapper_schedule>div' ).addClass(curClass);
+
+            return false;
+        });
+
     } );
 
     var Accordion = function(obj) {
