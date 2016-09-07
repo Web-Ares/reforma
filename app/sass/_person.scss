@@ -67,7 +67,8 @@
     color: #006e89;
 
     &.active{
-      background-color: #006e89;
+      color: #fff!important;
+      background-color: #006e89 !important;
     }
 
   }
@@ -170,15 +171,22 @@
 
   .person {
 
-    &__name:hover{
-      color: #fff;
-      background-color: #95c11f;
+    &__post-info {
+      display: inline-block;
 
-      & + .person__list{
-        opacity: 1;
-        visibility: visible;
+      &:hover {
+
+        .person__name {
+          color: #fff;
+          background-color: #95c11f;
+        }
+
+        .person__list {
+          opacity: 1;
+          visibility: visible;
+        }
+
       }
-
     }
 
     &__link:hover{
@@ -187,12 +195,9 @@
 
   }
 
-  .person_1{
-
-    .person__name:hover{
-      background-color: #006e89;
-    }
-
+  .person_1 .person__post-info:hover .person__name {
+    background-color: #006e89;
+    color:#fff;
   }
 
 }
