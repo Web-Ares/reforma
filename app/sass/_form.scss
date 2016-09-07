@@ -46,7 +46,11 @@
       font-weight: 600;
       text-align: center;
       text-transform: uppercase;
-      cursor: default;
+      cursor: pointer;
+      transition: opacity .3s ease;
+    }
+    &_call:hover{
+      opacity:0.8;
     }
 
     &_gallery{

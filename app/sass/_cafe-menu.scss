@@ -12,6 +12,10 @@
   line-height: 24px;
   font-weight: 300;
   color: #fff;
+  transition: opacity .3s ease;
+}
+.banquet__description:hover{
+  opacity:.8;
 }
 .banquet__description div {
   position: absolute;
