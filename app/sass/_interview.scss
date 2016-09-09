@@ -163,6 +163,32 @@
   }
 
 }
+.interview_4{
+  width: 100%;
+  max-width: 331px;
+  padding-left: 0;
+
+  .interview__title span{
+
+    &:after{
+    }
+
+  }
+
+  .interview__note{
+    display: none;
+  }
+
+  .interview__frame label:before{
+
+  }
+
+  .interview__frame label:after{
+
+  }
+
+
+}
 
 @media (min-width: $tablet-portrait) {
 
@@ -202,6 +228,30 @@
     }
 
   }
+  .interview_4{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    max-width: 331px;
+    padding: 73px 26px 18px 26px;
+    height: inherit;
+
+    .interview__note{
+      display: none;
+    }
+  }
+  .interview_4 dd {
+    width: 100%;
+  }
+  .interview_4 dl{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .interview_4 .btn_5, .interview .btn_8 {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
 
 }
 
@@ -223,6 +273,29 @@
       right: 49px;
     }
 
+  }
+
+  .interview_4{
+    width: 100%;
+    max-width: 331px;
+    padding: 52px 26px 18px 26px;
+    height: inherit;
+
+    .interview__note{
+      display: none;
+    }
+  }
+  .interview_4 dd {
+    width: 100%;
+  }
+  .interview_4 dl{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .interview_4 .btn_5, .interview .btn_8 {
+    position: relative;
+    top: 0;
+    right: 0;
   }
 
 }

@@ -133,6 +133,71 @@
   }
 
 }
+.forms__item_feedback{
+  color: #a6a6a6;
+  border-top: 1px solid #e49101;
+}
+.forms__item_feedback .btn_4{
+  margin: 0 auto;
+}
+.forms__item_feedback fieldset{
+  margin-bottom: 0;
+  text-align: left;
+}
+.forms__item_feedback label{
+  width: 100%;
+  padding-left: 10px;
+  margin-bottom: 7px;
+  font-size: 14px;
+  color: #000;
+  text-align: left;
+}
+.forms__item_feedback label span {
+  color: #a6a6a6;
+}
+.forms__item_feedback input{
+  height: 35px;
+  margin-bottom: 15px;
+  border: 1px solid #d3d3d3;
+  text-align: left;
+}
+.forms__item_feedback textarea{
+  height: 80px;
+  margin-bottom: 8px;
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+}
+.feedback-form{
+  width: 100%;
+  max-width: 498px;
+  margin-top: 41px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.forms__item_feedback-text{
+  margin-bottom: 13px;
+  font-size: 14px;
+  color: #000;
+  text-align: left;
+}
+.feedback-form .forms__item_feedback-text{
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.feedback-form .forms__item_feedback{
+  padding: 21px 29px 16px 29px;
+  border: 1px solid #d3d3d3;
+}
+.feedback-form .forms__item_feedback input{
+  width: 100%;
+  border: 1px solid #d3d3d3;
+}
+.feedback-form .forms__item_feedback textarea{
+  height: 146px;
+  margin-bottom: 14px;
+}
 
 @media (min-width: $tablet-portrait) {
 
@@ -160,6 +225,16 @@
       font-size: 1.09em;
     }
 
+  }
+  .forms__item_feedback {
+    width: 100%;
+  }
+  .feedback-form .forms__item_feedback input {
+    width: 59%;
+    margin-bottom: 11px;
+  }
+  .forms__item_feedback{
+    padding: 14px 25px 14px 28px;
   }
 
 }
@@ -195,6 +270,9 @@
     }
 
   }
+  .forms__item_feedback {
+    width: 100%;
+  }
 
 }
 
@@ -202,6 +280,9 @@
 
   .forms__item {
     width: 625px;
+  }
+  .forms__item_feedback{
+    width: 100%;
   }
 
 }

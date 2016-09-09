@@ -32,6 +32,10 @@
             new Person( $( this ) );
         });
 
+        $('.btn-up').each(function () {
+            SlideToTop($(this));
+        });
+
         $('.schedule__btn').click(function () {
 
             var curElem = $(this),
@@ -413,6 +417,48 @@
             _init = function () {
                 _addEvents();
             };
+
+        _init();
+    };
+
+    var SlideToTop = function (obj) {
+
+        //private properties
+        var _obj = obj;
+
+        //private methods
+        var _addEvents = function () {
+
+                _obj.on({
+                    click: function () {
+
+                        $('html, body').animate({scrollTop: 0}, 600);
+                    }
+                });
+
+                $(window).on({
+                    'scroll': function () {
+                        if ($(window).scrollTop() > $(window).height()) {
+                            $(_obj).fadeIn();
+                        } else {
+                            $(_obj).fadeOut();
+                        }
+                        if ($(window).scrollTop() + $(window).height() > $('.site__footer').offset().top + 16) {
+                            $('.btn-up').css({bottom: $(window).scrollTop() + $(window).height() - $('.site__footer').offset().top - 180});
+                        } else {
+                            $('.btn-up').css({bottom: '16px'});
+                        }
+                    }
+                });
+            },
+            _init = function () {
+
+                _addEvents();
+            };
+
+        //public properties
+
+        //public methods
 
         _init();
     };
